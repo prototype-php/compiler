@@ -58,11 +58,11 @@ final class Enum implements
     }
 
     /**
-     * @return non-empty-string
+     * {@inheritdoc}
      */
-    public function filename(): string
+    public function typeName(): string
     {
-        return $this->name.'.php';
+        return $this->name;
     }
 
     /**
