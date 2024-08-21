@@ -54,5 +54,6 @@ final class Service implements Definition
         yield fn (DefinitionGenerator $generator): string => $generator->generateClient($this);
         yield fn (DefinitionGenerator $generator): string => $generator->generateServerInterface($this);
         yield fn (DefinitionGenerator $generator): string => $generator->generateServerStub($this);
+        yield fn (DefinitionGenerator $generator): string => $generator->generateServiceRegistrar($this);
     }
 }
